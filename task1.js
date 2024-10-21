@@ -15,14 +15,16 @@ function getAssignedQuestion(region, currentDate) {
     if (currentDate >= cycleStartDate) {
         const timeDifference = currentDate - cycleStartDate;
         const cycleNumber = Math.floor(timeDifference / (cycleDuration * 24 * 60 * 60 * 1000));
-
-        if (region === 'Singapore') {
-            return singapore[cycleNumber];
-        } else if (region === 'US') {
-            return us[cycleNumber];
-        } else
-            return ('Invalid region')
-
+        switch(region){
+            case 'Singapore':
+                return singapore[cycleNumber];
+                break; 
+            case 'US':
+                return us[cycleNumber];
+                break; 
+            default:
+                return ('Invalid region')
+        }
     }
     return ('Cycle started on 2024-10-14T19:00:00.Please enter date after that!')
 }
