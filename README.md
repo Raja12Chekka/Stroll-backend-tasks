@@ -1,4 +1,4 @@
-                                                          ******Dynamic Question Assignment******
+                                              ******Dynamic Question Assignment******
 
 
   Created a two different Arrays with some set of questions as singapore and us. After that created some constant variables as cycleDuration,cycleStartDate has  7and  '2024-10-14T19:00:00' as initial cycle start date respectively. 
